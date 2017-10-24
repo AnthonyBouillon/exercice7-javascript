@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 7 javascript</title>
+  </head>
+  <body>
+    <form>
+             <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
+             <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
+             <button id="valider" name="valider" onclick="donnee();">Valider</button>
+   </form>
+    <script>
+    function donnee(){
+      // Associe la vaiable size à l'id "pointure" pour récupéré les données
+      var size = document.getElementById('pointure').value;
+      var year = document.getElementById('annee').value;
+      var multiplication = size * 2;
+      var multiplication = multiplication + 5;
+      var multiplication = multiplication * 50;
+      var multiplication = multiplication - year;
+      var multiplication = multiplication + 1766;
+      alert(multiplication);
+    }
+    </script>
+  </body>
+</html>
