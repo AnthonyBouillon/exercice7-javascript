@@ -15,12 +15,13 @@
       // Associe la vaiable size à l'id "pointure" pour récupéré les données
       var size = document.getElementById('pointure').value;
       var year = document.getElementById('annee').value;
-      var multiplication = size * 2;
-      var multiplication = multiplication + 5;
-      var multiplication = multiplication * 50;
-      var multiplication = multiplication - year;
-      var multiplication = multiplication + 1766;
-      alert(multiplication);
+      var result = size * 2;
+      //result = 5 + result
+      result += 5;
+      result *= 50;
+      result -= year;
+      result += 1766;
+      alert(result);
     }
     </script>
   </body>
